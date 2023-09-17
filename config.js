@@ -1,3 +1,7 @@
+// defines a generated theme
+const theme = `mundorum` // default, bw, mundorum
+const themeDir = `tokens-theme/${theme}/**/*.json`
+
 // custom: to import the css transform group
 const StyleDictionary = require('style-dictionary')
 const fs = require('fs')
@@ -105,7 +109,7 @@ StyleDictionary.registerFormat({
 })
 
 module.exports = {
-  source: [`tokens/**/*.json`],
+  source: [`tokens/**/*.json`, themeDir],
   // custom transforms
   transform: {
     'shape/rem': {

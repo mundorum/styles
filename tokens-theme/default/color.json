@@ -1,6 +1,6 @@
 {
   "color": {
-    "brand": {
+    "theme": {
       "primary": {
         "lighter": { "value": "{color.base.indigo.100.value}" },
         "light":   { "value": "{color.base.indigo.300.value}" },

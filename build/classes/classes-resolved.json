@@ -1,4 +1,8 @@
 {
+  "bg-base": {
+    "background-color": "#f5f1ed"
+  },
+
   "btn": {
     "font-family": "Roboto",
     "font-size": "1rem",
@@ -14,22 +18,22 @@
   },
 
   "btn-primary": {
-    "background-color": "#616161",
-    "color": "#ffffff",
-    "border": "#9e9e9e"
+    "background-color": "#4e4b4a",
+    "color": "#f5f1ed",
+    "border": "#7a7675"
   },
 
   "btn-primary:hover": {
-    "background-color": "#212121"
+    "background-color": "#252323"
   },
 
   "btn-secondary": {
-    "background-color": "#e0e0e0",
-    "color": "#000000",
+    "background-color": "#9ba1af",
+    "color": "#252323",
     "border": "#e0e0e0"
   },
 
   "btn-secondary:hover": {
-    "background-color": "#bdbdbd"
+    "background-color": "#7e8698"
   }
 }

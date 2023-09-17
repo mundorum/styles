@@ -1,0 +1,29 @@
+{
+  "color": {
+    "theme": {
+      "background": {
+        "base": { "value": "{color.base.isabelline_raisin.50.value}" }
+      },
+
+      "primary": {
+        "lighter": { "value": "{color.base.isabelline_raisin.100.value}" },
+        "light":   { "value": "{color.base.isabelline_raisin.300.value}" },
+        "base":    { "value": "{color.base.isabelline_raisin.500.value}" },
+        "dark":    { "value": "{color.base.isabelline_raisin.700.value}" },
+        "darker":  { "value": "{color.base.isabelline_raisin.900.value}" },
+
+        "font": { "value": "{color.base.isabelline_raisin.50.value}" }
+      },
+
+      "secondary": {
+        "lighter": { "value": "{color.base.slate_grey.50.value}" },
+        "light":   { "value": "{color.base.slate_grey.100.value}" },
+        "base":    { "value": "{color.base.slate_grey.200.value}" },
+        "dark":    { "value": "{color.base.slate_grey.400.value}" },
+        "darker":  { "value": "{color.base.slate_grey.600.value}" },
+
+        "font": { "value": "{color.base.isabelline_raisin.900.value}" }
+      }
+    }
+  }
+}

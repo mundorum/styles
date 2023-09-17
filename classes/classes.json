@@ -1,4 +1,8 @@
 {
+  "bg-base": {
+    "background-color": "{color.background.base.value}"
+  },
+
   "btn": {
     "font-family": "{font.family.button.value}",
     "font-size": "{size.font.button.value}",

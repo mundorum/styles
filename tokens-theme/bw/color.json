@@ -1,6 +1,6 @@
 {
   "color": {
-    "brand": {
+    "theme": {
       "primary": {
         "lighter": { "value": "{color.base.grey.100.value}" },
         "light":   { "value": "{color.base.grey.300.value}" },
