@@ -5,8 +5,8 @@
       "secondary":    { "value": "{color.base.grey.800.value}"  },
       "tertiary":     { "value": "{color.base.grey.600.value}"  },
       "quaternary":   { "value": "{color.base.grey.400.value}"  },
-      "link":         { "value": "{color.theme.primary.base.value}" },
-      "active":       { "value": "{color.theme.secondary.base.value}" },
+      "link":         { "value": "{theme.color.primary.base.value}" },
+      "active":       { "value": "{theme.color.secondary.base.value}" },
       "error":        { "value": "{color.base.red.600.value}"      },
       "warning":      { "value": "{color.base.orange.800.value}"   },
       "success":      { "value": "{color.base.green.600.value}"    },
@@ -17,8 +17,8 @@
         "secondary":    { "value": "{color.base.grey.100.value}"         },
         "tertiary":     { "value": "{color.base.grey.200.value}"         },
         "quaternary":   { "value": "{color.base.grey.400.value}"         },
-        "link":         { "value": "{color.theme.primary.light.value}"   },
-        "active":       { "value": "{color.theme.secondary.light.value}" },
+        "link":         { "value": "{theme.color.primary.light.value}"   },
+        "active":       { "value": "{theme.color.secondary.light.value}" },
         "error":        { "value": "{color.base.red.400.value}"          },
         "warning":      { "value": "{color.base.orange.400.value}"       },
         "success":      { "value": "{color.base.green.400.value}"        },
@@ -26,8 +26,8 @@
       },
 
       "button": {
-        "primary":   { "value": "{color.theme.primary.font.value}" },
-        "secondary": { "value": "{color.theme.secondary.font.value}" }
+        "primary":   { "value": "{theme.color.primary.font.value}" },
+        "secondary": { "value": "{theme.color.secondary.font.value}" }
       }
     }
   }

@@ -1,5 +1,5 @@
 // defines a generated theme
-const theme = `mundorum` // default, bw, mundorum
+const theme = `bw` // default, bw, mundorum
 const themeDir = `tokens-theme/${theme}/**/*.json`
 
 // custom: to import the css transform group
@@ -7,8 +7,8 @@ const StyleDictionary = require('style-dictionary')
 const fs = require('fs')
 const { transferableAbortController } = require('util')
 
-const jsonStrClasses =
-  fs.readFileSync('classes/classes.json').toString()
+const jsonStrCSS =
+  fs.readFileSync('css/style.json').toString()
 
 // find the path in the token tree and converts to the value
 function getFinalValue(tokenName, dictionary) {
@@ -47,14 +47,14 @@ function cssImportFonts (dictionary) {
   return cssFonts
 }
 
-// convert JSON classes to CSS classes
-function classJSONtoCSS (jsonStrClasses) {
-  let cssClasses = ''
-  const jsonClasses = JSON.parse(jsonStrClasses)
-  for (const cls in jsonClasses) {
-    cssClasses += `.${cls} {\n`
-    for (const prop in jsonClasses[cls]) {
-      let value = jsonClasses[cls][prop]
+// convert JSON items to CSS definitions
+function convertJSONtoCSS (jsonStrCSS) {
+  let css = ''
+  const jsonCSS = JSON.parse(jsonStrCSS)
+  for (const jc in jsonCSS) {
+    css += `${jc} {\n`
+    for (const prop in jsonCSS[jc]) {
+      let value = jsonCSS[jc][prop]
       // check Array type and transform in a string
       if (Array.isArray(value))
         value = value.join(' ')
@@ -64,11 +64,11 @@ function classJSONtoCSS (jsonStrClasses) {
           .replace(/\./g, '-')
           .replace(/{/g, 'var(--')
           .replace(/}/g, ')')
-      cssClasses += `  ${prop}: ${value};\n`
+      css += `  ${prop}: ${value};\n`
     }
-    cssClasses += '}\n'
+    css += '}\n'
   }
-  return cssClasses
+  return css
 }
 
 /* Output 1: aggregated tokens */
@@ -83,7 +83,7 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: 'jsonResolvedFormat',
   formatter: function({dictionary, platform, options, file}) {
-    const jsonResClasses = jsonStrClasses
+    const jsonResClasses = jsonStrCSS
       .replace(/{(.*)}/g, (match, tokenName) => getFinalValue(tokenName, dictionary))
 
     return jsonResClasses
@@ -94,7 +94,7 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: 'cssClassFormat',
   formatter: function({dictionary, platform, options, file}) {
-    return cssImportFonts(dictionary) + classJSONtoCSS (jsonStrClasses)
+    return cssImportFonts(dictionary) + convertJSONtoCSS (jsonStrCSS)
   }
 })
 
@@ -102,9 +102,9 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: 'cssResolvedClassFormat',
   formatter: function({dictionary, platform, options, file}) {
-    const jsonResClasses = jsonStrClasses
+    const jsonResClasses = jsonStrCSS
       .replace(/{(.*)}/g, (match, tokenName) => getFinalValue(tokenName, dictionary))
-    return cssImportFonts(dictionary) + classJSONtoCSS (jsonResClasses)
+    return cssImportFonts(dictionary) + convertJSONtoCSS (jsonResClasses)
   }
 })
 
@@ -137,15 +137,15 @@ module.exports = {
         },
         {
           "format": "jsonResolvedFormat",
-          "destination": "classes/classes-resolved.json"
+          "destination": "json/css-style-resolved.json"
         },
         {
           "format": "cssClassFormat",
-          "destination": "css/classes-tokens.css",
+          "destination": "css/style-tokens.css",
         },
         {
           "format": "cssResolvedClassFormat",
-          "destination": "css/classes-resolved.css"
+          "destination": "css/style-resolved.css"
         }
       ]
     }

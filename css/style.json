@@ -1,9 +1,18 @@
 {
-  "bg-base": {
+  "h1": {
+    "font-family": "{font.family.title.value}",
+    "font-size": "{size.font.title.xl.value}"
+  },
+
+  "body": {
     "background-color": "{color.background.base.value}"
   },
 
-  "btn": {
+  ".bg-base": {
+    "background-color": "{color.background.base.value}"
+  },
+
+  ".btn": {
     "font-family": "{font.family.button.value}",
     "font-size": "{size.font.button.value}",
     "border-radius": "{shape.corner.button.value}",
@@ -13,27 +22,27 @@
     ]
   },
 
-  "btn:hover":{
+  ".btn:hover":{
     "cursor": "{cursor.button.active.value}"
   },
 
-  "btn-primary": {
+  ".btn-primary": {
     "background-color": "{color.background.button.primary.base.value}",
     "color": "{color.font.button.primary.value}",
     "border": "{color.border.button.primary.base.value}"
   },
 
-  "btn-primary:hover": {
+  ".btn-primary:hover": {
     "background-color": "{color.background.button.primary.active.value}"
   },
 
-  "btn-secondary": {
+  ".btn-secondary": {
     "background-color": "{color.background.button.secondary.base.value}",
     "color": "{color.font.button.secondary.value}",
     "border": "{color.border.button.secondary.base.value}"
   },
 
-  "btn-secondary:hover": {
+  ".btn-secondary:hover": {
     "background-color": "{color.background.button.secondary.active.value}"
   }
 }

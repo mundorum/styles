@@ -10,6 +10,14 @@
       "xxxl"  : { "value": "3" },
       "base"  : { "value": "{size.font.medium.value}" },
 
+      "title" : {
+        "tiny"  : { "value": "{size.font.small.value}" },
+        "small" : { "value": "{size.font.medium.value}" },
+        "medium": { "value": "{size.font.large.value}" },
+        "large" : { "value": "{size.font.xl.value}" },
+        "xl"    : { "value": "{size.font.xxl.value}" }
+      },
+
       "button": { "value": "{size.font.base.value}" }
     }
   }

@@ -1,8 +1,9 @@
 {
   "font": {
     "family": {
-      "base": { "value": "{asset.font.roboto.name.value}" },
-      "icons": { "value": "{asset.font.icon.name.value}" },
+      "base": { "value": "{theme.font.family.base.value}" },
+      "icons": { "value": "{theme.font.family.icons.value}" },
+      "title": { "value": "{theme.font.family.title.value}" },
 
       "button": { "value": "{font.family.base.value}" }
     }

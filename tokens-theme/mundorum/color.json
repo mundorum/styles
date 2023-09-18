@@ -1,6 +1,6 @@
 {
-  "color": {
-    "theme": {
+  "theme": {
+    "color": {
       "background": {
         "base": { "value": "{color.base.isabelline_raisin.50.value}" }
       },

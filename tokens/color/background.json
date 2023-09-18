@@ -1,7 +1,7 @@
 {
   "color": {
     "background": {
-      "base":         { "value":"{color.theme.background.base.value}", "attributes":{"font":"base"}   },
+      "base":         { "value":"{theme.color.background.base.value}", "attributes":{"font":"base"}   },
       "alt":          { "value":"{color.base.blue_grey.100.value}",    "attributes":{"font":"base"}   },
       "disabled":     { "value":"{color.base.blue_grey.100.value}",    "attributes":{"font":"base"}   },
       "inverse":      { "value":"{color.base.blue_grey.900.value}",    "attributes":{"font":"inverse"}},
@@ -14,14 +14,14 @@
 
       "button": {
         "primary": {
-          "base":     { "value": "{color.theme.primary.dark.value}" },
-          "disabled": { "value": "{color.theme.primary.light.value}" },
-          "active":   { "value": "{color.theme.primary.darker.value}" }
+          "base":     { "value": "{theme.color.primary.dark.value}" },
+          "disabled": { "value": "{theme.color.primary.light.value}" },
+          "active":   { "value": "{theme.color.primary.darker.value}" }
         },
         "secondary": {
-          "base":     { "value": "{color.theme.secondary.base.value}" },
-          "disabled": { "value": "{color.theme.secondary.light.value}" },
-          "active":   { "value": "{color.theme.secondary.dark.value}" }
+          "base":     { "value": "{theme.color.secondary.base.value}" },
+          "disabled": { "value": "{theme.color.secondary.light.value}" },
+          "active":   { "value": "{theme.color.secondary.dark.value}" }
         }
       },
 

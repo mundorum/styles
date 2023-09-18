@@ -1,6 +1,10 @@
 {
-  "color": {
-    "theme": {
+  "theme": {
+    "color": {
+      "background": {
+        "base": { "value": "{color.base.grey.100.value}" }
+      },
+
       "primary": {
         "lighter": { "value": "{color.base.grey.100.value}" },
         "light":   { "value": "{color.base.grey.300.value}" },
