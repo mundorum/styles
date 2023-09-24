@@ -44,5 +44,10 @@
 
   ".btn-secondary:hover": {
     "background-color": "{color.background.button.secondary.active.value}"
+  },
+
+  ".divide": {
+    "background-color": "{color.border.divide.value}",
+    "width": "{size.border.divide.value}"
   }
 }

@@ -20,7 +20,9 @@
           "active": { "value": "{theme.color.secondary.dark.value}"},
           "disabled": { "value": "{color.border.light.value}" }
         }
-      }
+      },
+
+      "divide": { "value": "{theme.color.border.divide.value}" }
     }
   }
 }

@@ -1,5 +1,5 @@
 // defines a generated theme
-const theme = `bw` // default, bw, mundorum
+const theme = `mundorum` // default, bw, mundorum
 const themeDir = `tokens-theme/${theme}/**/*.json`
 
 // custom: to import the css transform group

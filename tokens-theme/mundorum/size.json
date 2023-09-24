@@ -1,0 +1,9 @@
+{
+  "theme": {
+    "size": {
+      "border": {
+        "divide" : { "value": "{size.border.large.value}" }
+      }
+    }
+  }
+}

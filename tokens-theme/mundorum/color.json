@@ -23,6 +23,10 @@
         "darker":  { "value": "{color.base.slate_grey.600.value}" },
 
         "font": { "value": "{color.base.isabelline_raisin.900.value}" }
+      },
+
+      "border": {
+        "divide": { "value": "{theme.color.primary.darker.value}" }
       }
     }
   }

@@ -46,3 +46,7 @@ body {
 .btn-secondary:hover {
   background-color: var(--color-background-button-secondary-active);
 }
+.divide {
+  background-color: var(--color-border-divide);
+  width: var(--size-border-divide);
+}

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 17 Sep 2023 23:04:54 GMT
+ * Generated on Mon, 18 Sep 2023 16:25:55 GMT
  */
 
 :root {
@@ -14,7 +14,7 @@
   --asset-font-roboto-name: "Roboto";
   --asset-font-roboto-ttf: "/assets/fonts/Roboto-Regular.ttf";
   --asset-font-arial-name: "Arial, sans-serif";
-  --color-background-base: #f5f5f5;
+  --color-background-base: #f5f1ed;
   --color-background-alt: #cfd8dc;
   --color-background-disabled: #cfd8dc;
   --color-background-inverse: #263238;
@@ -24,12 +24,12 @@
   --color-background-info: #039be5;
   --color-background-link: #039be5;
   --color-background-low-priority: #757575;
-  --color-background-button-primary-base: #616161;
-  --color-background-button-primary-disabled: #e0e0e0;
-  --color-background-button-primary-active: #212121;
-  --color-background-button-secondary-base: #e0e0e0;
-  --color-background-button-secondary-disabled: #eeeeee;
-  --color-background-button-secondary-active: #bdbdbd;
+  --color-background-button-primary-base: #4e4b4a;
+  --color-background-button-primary-disabled: #aaa5a3;
+  --color-background-button-primary-active: #252323;
+  --color-background-button-secondary-base: #9ba1af;
+  --color-background-button-secondary-disabled: #a9afba;
+  --color-background-button-secondary-active: #7e8698;
   --color-background-overlay-light: rgba(255, 255, 255, 0.8);
   --color-background-overlay-dark: rgba(0, 0, 0, 0.27);
   --color-base-red-50: #ffe5ee;
@@ -311,16 +311,17 @@
   --color-border-light: #eeeeee;
   --color-border-base: #e0e0e0;
   --color-border-dark: #bdbdbd;
-  --color-border-focus: #9e9e9e;
+  --color-border-focus: #7a7675;
   --color-border-error: #e53935;
   --color-border-warning: #fb8c00;
   --color-border-success: #43a047;
-  --color-border-button-primary-base: #9e9e9e;
-  --color-border-button-primary-disabled: #e0e0e0;
-  --color-border-button-primary-active: #616161;
+  --color-border-button-primary-base: #7a7675;
+  --color-border-button-primary-disabled: #aaa5a3;
+  --color-border-button-primary-active: #4e4b4a;
   --color-border-button-secondary-base: #e0e0e0;
-  --color-border-button-secondary-active: #bdbdbd;
+  --color-border-button-secondary-active: #7e8698;
   --color-border-button-secondary-disabled: #eeeeee;
+  --color-border-divide: #252323;
   --color-chart-stacked-base-100: #bbdefb;
   --color-chart-stacked-base-200: #90caf9;
   --color-chart-stacked-base-300: #64b5f6;
@@ -334,8 +335,8 @@
   --color-font-secondary: #424242;
   --color-font-tertiary: #757575;
   --color-font-quaternary: #bdbdbd;
-  --color-font-link: #9e9e9e;
-  --color-font-active: #e0e0e0;
+  --color-font-link: #7a7675;
+  --color-font-active: #9ba1af;
   --color-font-error: #e53935;
   --color-font-warning: #ef6c00;
   --color-font-success: #43a047;
@@ -344,14 +345,14 @@
   --color-font-inverse-secondary: #f5f5f5;
   --color-font-inverse-tertiary: #eeeeee;
   --color-font-inverse-quaternary: #bdbdbd;
-  --color-font-inverse-link: #e0e0e0;
-  --color-font-inverse-active: #eeeeee;
+  --color-font-inverse-link: #aaa5a3;
+  --color-font-inverse-active: #a9afba;
   --color-font-inverse-error: #ef5350;
   --color-font-inverse-warning: #ffa726;
   --color-font-inverse-success: #66bb6a;
   --color-font-inverse-disabled: #f5f5f5;
-  --color-font-button-primary: #ffffff;
-  --color-font-button-secondary: #000000;
+  --color-font-button-primary: #f5f1ed;
+  --color-font-button-secondary: #252323;
   --content-icon-3d-rotation: 3d_rotation;
   --content-icon-airline-seat-individual-suite: airline_seat_individual_suite;
   --content-icon-airline-seat-legroom-reduced: airline_seat_legroom_reduced;
@@ -1333,6 +1334,12 @@
   --shape-corner-large: .5rem;
   --shape-corner-xlarge: .75rem;
   --shape-corner-button: .375rem;
+  --size-border-small: 0.05rem;
+  --size-border-medium: 0.1rem;
+  --size-border-large: 0.2rem;
+  --size-border-xl: 0.3rem;
+  --size-border-xxl: 0.4rem;
+  --size-border-divide: 0.2rem;
   --size-font-tiny: 0.75rem;
   --size-font-small: 0.875rem;
   --size-font-medium: 1rem;
@@ -1371,20 +1378,22 @@
   --time-duration-short: 2.00s;
   --time-duration-base: 4.00s;
   --time-duration-long: 6.00s;
-  --theme-color-background-base: #f5f5f5;
-  --theme-color-primary-lighter: #f5f5f5;
-  --theme-color-primary-light: #e0e0e0;
-  --theme-color-primary-base: #9e9e9e;
-  --theme-color-primary-dark: #616161;
-  --theme-color-primary-darker: #212121;
-  --theme-color-primary-font: #ffffff;
-  --theme-color-secondary-lighter: #f5f5f5;
-  --theme-color-secondary-light: #eeeeee;
-  --theme-color-secondary-base: #e0e0e0;
-  --theme-color-secondary-dark: #bdbdbd;
-  --theme-color-secondary-darker: #9e9e9e;
-  --theme-color-secondary-font: #000000;
+  --theme-color-background-base: #f5f1ed;
+  --theme-color-primary-lighter: #dbd7d4;
+  --theme-color-primary-light: #aaa5a3;
+  --theme-color-primary-base: #7a7675;
+  --theme-color-primary-dark: #4e4b4a;
+  --theme-color-primary-darker: #252323;
+  --theme-color-primary-font: #f5f1ed;
+  --theme-color-secondary-lighter: #b7bcc6;
+  --theme-color-secondary-light: #a9afba;
+  --theme-color-secondary-base: #9ba1af;
+  --theme-color-secondary-dark: #7e8698;
+  --theme-color-secondary-darker: #5a6170;
+  --theme-color-secondary-font: #252323;
+  --theme-color-border-divide: #252323;
   --theme-font-family-base: Roboto;
   --theme-font-family-icons: MaterialIcons;
   --theme-font-family-title: Roboto;
+  --theme-size-border-divide: 0.2rem;
 }
