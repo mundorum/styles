@@ -18,6 +18,8 @@
         "xl"    : { "value": "{size.font.xxl.value}" }
       },
 
+      "code": { "value": "{size.font.small.value}" },
+
       "button": { "value": "{size.font.base.value}" }
     }
   }

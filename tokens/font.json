@@ -4,6 +4,7 @@
       "base": { "value": "{theme.font.family.base.value}" },
       "icons": { "value": "{theme.font.family.icons.value}" },
       "title": { "value": "{theme.font.family.title.value}" },
+      "code": { "value": "{theme.font.family.code.value}" },
 
       "button": { "value": "{font.family.base.value}" }
     }

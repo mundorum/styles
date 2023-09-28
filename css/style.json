@@ -1,15 +1,28 @@
 {
-  "h1": {
-    "font-family": "{font.family.title.value}",
+  ".h1, h1, .h2, h2, .h3, h3": {
+    "font-family": "{font.family.title.value}"
+  },
+  ".h1, h1": {
     "font-size": "{size.font.title.xl.value}"
   },
+  ".h2, h2": {
+    "font-size": "{size.font.title.large.value}"
+  },
+  ".h3, h3": {
+    "font-size": "{size.font.title.medium.value}"
+  },
 
-  "body": {
+  ".body, body": {
     "background-color": "{color.background.base.value}"
   },
 
   ".bg-base": {
     "background-color": "{color.background.base.value}"
+  },
+
+  ".code": {
+    "font-family": "{font.family.code.value}",
+    "font-size": "{size.font.code.value}"
   },
 
   ".btn": {
@@ -47,7 +60,14 @@
   },
 
   ".divide": {
-    "background-color": "{color.border.divide.value}",
+    "background-color": "{color.border.divide.value}"
+  },
+
+  ".divide-x": {
     "width": "{size.border.divide.value}"
+  },
+
+  ".divide-y": {
+    "height": "{size.border.divide.value}"
   }
 }

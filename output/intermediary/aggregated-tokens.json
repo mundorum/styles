@@ -218,6 +218,29 @@
             "name"
           ]
         }
+      },
+      "monospace": {
+        "name": {
+          "value": "'Courier New', monospace",
+          "filePath": "tokens/asset/font.json",
+          "isSource": true,
+          "original": {
+            "value": "'Courier New', monospace"
+          },
+          "name": "asset-font-monospace-name",
+          "attributes": {
+            "category": "asset",
+            "type": "font",
+            "item": "monospace",
+            "subitem": "name"
+          },
+          "path": [
+            "asset",
+            "font",
+            "monospace",
+            "name"
+          ]
+        }
       }
     }
   },
@@ -27050,6 +27073,25 @@
           "title"
         ]
       },
+      "code": {
+        "value": "'Courier New', monospace",
+        "filePath": "tokens/font.json",
+        "isSource": true,
+        "original": {
+          "value": "{theme.font.family.code.value}"
+        },
+        "name": "font-family-code",
+        "attributes": {
+          "category": "font",
+          "type": "family",
+          "item": "code"
+        },
+        "path": [
+          "font",
+          "family",
+          "code"
+        ]
+      },
       "button": {
         "value": "Roboto",
         "filePath": "tokens/font.json",
@@ -27565,6 +27607,25 @@
             "xl"
           ]
         }
+      },
+      "code": {
+        "value": "0.875rem",
+        "filePath": "tokens/size/font.json",
+        "isSource": true,
+        "original": {
+          "value": "{size.font.small.value}"
+        },
+        "name": "size-font-code",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "code"
+        },
+        "path": [
+          "size",
+          "font",
+          "code"
+        ]
       },
       "button": {
         "value": "1rem",
@@ -28429,6 +28490,27 @@
             "font",
             "family",
             "title"
+          ]
+        },
+        "code": {
+          "value": "'Courier New', monospace",
+          "filePath": "tokens-theme/mundorum/font.json",
+          "isSource": true,
+          "original": {
+            "value": "{asset.font.monospace.name.value}"
+          },
+          "name": "theme-font-family-code",
+          "attributes": {
+            "category": "theme",
+            "type": "font",
+            "item": "family",
+            "subitem": "code"
+          },
+          "path": [
+            "theme",
+            "font",
+            "family",
+            "code"
           ]
         }
       }

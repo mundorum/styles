@@ -18,6 +18,9 @@
       },
       "arial": {
         "name" : { "value": "Arial, sans-serif" }
+      },
+      "monospace": {
+        "name" : { "value": "'Courier New', monospace" }
       }
    }
   }

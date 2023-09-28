@@ -48,25 +48,41 @@ function cssImportFonts (dictionary) {
 }
 
 // convert JSON items to CSS definitions
-function convertJSONtoCSS (jsonStrCSS) {
+function convertJSONtoCSS (jsonStrCSS, onlyClasses) {
   let css = ''
   const jsonCSS = JSON.parse(jsonStrCSS)
   for (const jc in jsonCSS) {
-    css += `${jc} {\n`
-    for (const prop in jsonCSS[jc]) {
-      let value = jsonCSS[jc][prop]
-      // check Array type and transform in a string
-      if (Array.isArray(value))
-        value = value.join(' ')
-      if (value.includes('{'))
-        value = value
-          .replace(/\.value/g, '')
-          .replace(/\./g, '-')
-          .replace(/{/g, 'var(--')
-          .replace(/}/g, ')')
-      css += `  ${prop}: ${value};\n`
+    if (!onlyClasses || jc.includes('.')) {
+      let njc = jc
+
+      // removes items that are not classes
+      if (onlyClasses && jc.includes(',')) {
+        njc = ''
+        const items = jc.split(',')
+        let sep = ''
+        for (const i of items)
+          if (i.includes('.')) {
+           njc += sep + i
+           sep = ','
+          }
+      }
+
+      css += `${njc} {\n`
+      for (const prop in jsonCSS[jc]) {
+        let value = jsonCSS[jc][prop]
+        // check Array type and transform in a string
+        if (Array.isArray(value))
+          value = value.join(' ')
+        if (value.includes('{'))
+          value = value
+            .replace(/\.value/g, '')
+            .replace(/\./g, '-')
+            .replace(/{/g, 'var(--')
+            .replace(/}/g, ')')
+        css += `  ${prop}: ${value};\n`
+      }
+      css += '}\n'
     }
-    css += '}\n'
   }
   return css
 }
@@ -92,19 +108,29 @@ StyleDictionary.registerFormat({
 
 /* Output 3: CSS file with token variables */
 StyleDictionary.registerFormat({
-  name: 'cssClassFormat',
+  name: 'cssTokensFormat',
   formatter: function({dictionary, platform, options, file}) {
-    return cssImportFonts(dictionary) + convertJSONtoCSS (jsonStrCSS)
+    return cssImportFonts(dictionary) + convertJSONtoCSS (jsonStrCSS, false)
   }
 })
 
-/* Output 4: CSS file with final values */
+/* Output 4: complete CSS file with final values */
 StyleDictionary.registerFormat({
-  name: 'cssResolvedClassFormat',
+  name: 'cssResolvedFormat',
   formatter: function({dictionary, platform, options, file}) {
     const jsonResClasses = jsonStrCSS
       .replace(/{(.*)}/g, (match, tokenName) => getFinalValue(tokenName, dictionary))
-    return cssImportFonts(dictionary) + convertJSONtoCSS (jsonResClasses)
+    return cssImportFonts(dictionary) + convertJSONtoCSS (jsonResClasses, false)
+  }
+})
+
+/* Output 5: only classes CSS file with final values */
+StyleDictionary.registerFormat({
+  name: 'cssResolvedFormatClasses',
+  formatter: function({dictionary, platform, options, file}) {
+    const jsonResClasses = jsonStrCSS
+      .replace(/{(.*)}/g, (match, tokenName) => getFinalValue(tokenName, dictionary))
+    return convertJSONtoCSS (jsonResClasses, true)
   }
 })
 
@@ -125,7 +151,7 @@ module.exports = {
       },
       // extends css transform group with custom transforms
       'transforms': StyleDictionary.transformGroup['css'].concat(['shape/rem']),
-      "buildPath": "build/",
+      "buildPath": "output/",
       "files": [
         {
           "format": "css/variables",
@@ -140,12 +166,16 @@ module.exports = {
           "destination": "json/css-style-resolved.json"
         },
         {
-          "format": "cssClassFormat",
+          "format": "cssTokensFormat",
           "destination": "css/style-tokens.css",
         },
         {
-          "format": "cssResolvedClassFormat",
+          "format": "cssResolvedFormat",
           "destination": "css/style-resolved.css"
+        },
+        {
+          "format": "cssResolvedFormatClasses",
+          "destination": "css/style-resolved-classes.css"
         }
       ]
     }

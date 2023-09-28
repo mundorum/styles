@@ -5,7 +5,9 @@
         "base": { "value": "{asset.font.roboto.name.value}" },
         "icons": { "value": "{asset.font.icon.name.value}" },
 
-        "title": { "value": "{asset.font.roboto.name.value}" }
+        "title": { "value": "{asset.font.roboto.name.value}" },
+
+        "code": { "value": "{asset.font.monospace.name.value}" }
       }
     }
   }

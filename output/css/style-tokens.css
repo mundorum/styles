@@ -11,15 +11,27 @@
   src: url('/assets/fonts/Roboto-Regular.ttf');
 }
 
-h1 {
+.h1, h1, .h2, h2, .h3, h3 {
   font-family: var(--font-family-title);
+}
+.h1, h1 {
   font-size: var(--size-font-title-xl);
 }
-body {
+.h2, h2 {
+  font-size: var(--size-font-title-large);
+}
+.h3, h3 {
+  font-size: var(--size-font-title-medium);
+}
+.body, body {
   background-color: var(--color-background-base);
 }
 .bg-base {
   background-color: var(--color-background-base);
+}
+.code {
+  font-family: var(--font-family-code);
+  font-size: var(--size-font-code);
 }
 .btn {
   font-family: var(--font-family-button);
@@ -48,5 +60,10 @@ body {
 }
 .divide {
   background-color: var(--color-border-divide);
+}
+.divide-x {
   width: var(--size-border-divide);
+}
+.divide-y {
+  height: var(--size-border-divide);
 }

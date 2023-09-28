@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 18 Sep 2023 16:25:55 GMT
+ * Generated on Wed, 27 Sep 2023 23:37:03 GMT
  */
 
 :root {
@@ -14,6 +14,7 @@
   --asset-font-roboto-name: "Roboto";
   --asset-font-roboto-ttf: "/assets/fonts/Roboto-Regular.ttf";
   --asset-font-arial-name: "Arial, sans-serif";
+  --asset-font-monospace-name: "'Courier New', monospace";
   --color-background-base: #f5f1ed;
   --color-background-alt: #cfd8dc;
   --color-background-disabled: #cfd8dc;
@@ -1327,6 +1328,7 @@
   --font-family-base: Roboto;
   --font-family-icons: MaterialIcons;
   --font-family-title: Roboto;
+  --font-family-code: 'Courier New', monospace;
   --font-family-button: Roboto;
   --shape-corner-small: .125rem;
   --shape-corner-base: .25rem;
@@ -1353,6 +1355,7 @@
   --size-font-title-medium: 1.25rem;
   --size-font-title-large: 1.5rem;
   --size-font-title-xl: 2rem;
+  --size-font-code: 0.875rem;
   --size-font-button: 1rem;
   --size-icon-small: 1.5rem;
   --size-icon-base: 2rem;
@@ -1395,5 +1398,6 @@
   --theme-font-family-base: Roboto;
   --theme-font-family-icons: MaterialIcons;
   --theme-font-family-title: Roboto;
+  --theme-font-family-code: 'Courier New', monospace;
   --theme-size-border-divide: 0.2rem;
 }

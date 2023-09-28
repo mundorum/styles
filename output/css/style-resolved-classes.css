@@ -1,25 +1,24 @@
-@font-face {
-  font-family: 'MaterialIcons';
-  src: url('/assets/fonts/MaterialIcons-Regular.ttf');
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('/assets/fonts/OpenSans-Regular.ttf');
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf');
-}
-
-h1 {
+.h1, .h2, .h3 {
   font-family: Roboto;
+}
+.h1 {
   font-size: 2rem;
 }
-body {
+.h2 {
+  font-size: 1.5rem;
+}
+.h3 {
+  font-size: 1.25rem;
+}
+.body {
   background-color: #f5f1ed;
 }
 .bg-base {
   background-color: #f5f1ed;
+}
+.code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
 }
 .btn {
   font-family: Roboto;
@@ -48,5 +47,10 @@ body {
 }
 .divide {
   background-color: #252323;
+}
+.divide-x {
   width: 0.2rem;
+}
+.divide-y {
+  height: 0.2rem;
 }
