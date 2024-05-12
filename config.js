@@ -1,3 +1,7 @@
+// defines the project related to the styles
+const styprj = process.env.STYLE_PROJECT
+console.log('Generating from: ' + styprj)
+
 // defines a generated theme
 const theme = `mundorum` // default, bw, mundorum
 const themeDir = `tokens-theme/${theme}/**/*.json`
@@ -8,7 +12,7 @@ const fs = require('fs')
 const { transferableAbortController } = require('util')
 
 const jsonStrCSS =
-  fs.readFileSync('css/style.json').toString()
+  fs.readFileSync(`css/${styprj}.json`).toString()
 
 // find the path in the token tree and converts to the value
 function getFinalValue(tokenName, dictionary) {
@@ -151,7 +155,7 @@ module.exports = {
       },
       // extends css transform group with custom transforms
       'transforms': StyleDictionary.transformGroup['css'].concat(['shape/rem']),
-      "buildPath": "output/",
+      "buildPath": `output/${styprj}/`,
       "files": [
         {
           "format": "css/variables",

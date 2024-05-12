@@ -1,0 +1,9 @@
+{
+  ".node": {
+    "fill": "{color.background.button.primary.base.value}",
+    "stroke": "{color.border.button.primary.base.value}"
+  },
+  ".node:hover": {
+    "fill": "{color.background.button.primary.active.value}"
+  }
+}

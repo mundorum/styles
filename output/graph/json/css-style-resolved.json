@@ -1,0 +1,9 @@
+{
+  ".node": {
+    "fill": "#4e4b4a",
+    "stroke": "#7a7675"
+  },
+  ".node:hover": {
+    "fill": "#252323"
+  }
+}

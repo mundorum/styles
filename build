@@ -1,1 +1,2 @@
+export STYLE_PROJECT="base"
 npx style-dictionary build

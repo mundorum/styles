@@ -1,0 +1,14 @@
+.node {
+  fill: #4e4b4a;
+  stroke: #7a7675;
+}
+.node:hover {
+  fill: #252323;
+}
+.node-cover {
+  fill-opacity: 0;
+}
+.node-cover:hover {
+  fill: black;
+  fill-opacity: 0.2;
+}

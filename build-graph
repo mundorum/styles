@@ -1,0 +1,2 @@
+export STYLE_PROJECT="graph"
+npx style-dictionary build
