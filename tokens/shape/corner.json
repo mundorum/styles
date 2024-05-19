@@ -1,11 +1,13 @@
 {
   "shape": {
     "corner": {
-      "small": { "value":".125" },
-      "base":  { "value":".25" },
+      "none":   { "value":"0" },
+      "tiny":   { "value":".125" },
+      "small":  { "value":".25" },
       "medium": { "value":".375" },
-      "large": { "value":".5" },
-      "xlarge": { "value":".75" },
+      "large":  { "value":".5" },
+      "xl":     { "value":".75" },
+      "full":   { "value":"9999" },
 
       "button": { "value": "{shape.corner.medium.value}" }
     }

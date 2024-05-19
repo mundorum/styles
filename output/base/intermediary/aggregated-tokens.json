@@ -27115,12 +27115,50 @@
   },
   "shape": {
     "corner": {
-      "small": {
+      "none": {
+        "value": "0rem",
+        "filePath": "tokens/shape/corner.json",
+        "isSource": true,
+        "original": {
+          "value": "0"
+        },
+        "name": "shape-corner-none",
+        "attributes": {
+          "category": "shape",
+          "type": "corner",
+          "item": "none"
+        },
+        "path": [
+          "shape",
+          "corner",
+          "none"
+        ]
+      },
+      "tiny": {
         "value": ".125rem",
         "filePath": "tokens/shape/corner.json",
         "isSource": true,
         "original": {
           "value": ".125"
+        },
+        "name": "shape-corner-tiny",
+        "attributes": {
+          "category": "shape",
+          "type": "corner",
+          "item": "tiny"
+        },
+        "path": [
+          "shape",
+          "corner",
+          "tiny"
+        ]
+      },
+      "small": {
+        "value": ".25rem",
+        "filePath": "tokens/shape/corner.json",
+        "isSource": true,
+        "original": {
+          "value": ".25"
         },
         "name": "shape-corner-small",
         "attributes": {
@@ -27132,25 +27170,6 @@
           "shape",
           "corner",
           "small"
-        ]
-      },
-      "base": {
-        "value": ".25rem",
-        "filePath": "tokens/shape/corner.json",
-        "isSource": true,
-        "original": {
-          "value": ".25"
-        },
-        "name": "shape-corner-base",
-        "attributes": {
-          "category": "shape",
-          "type": "corner",
-          "item": "base"
-        },
-        "path": [
-          "shape",
-          "corner",
-          "base"
         ]
       },
       "medium": {
@@ -27191,23 +27210,42 @@
           "large"
         ]
       },
-      "xlarge": {
+      "xl": {
         "value": ".75rem",
         "filePath": "tokens/shape/corner.json",
         "isSource": true,
         "original": {
           "value": ".75"
         },
-        "name": "shape-corner-xlarge",
+        "name": "shape-corner-xl",
         "attributes": {
           "category": "shape",
           "type": "corner",
-          "item": "xlarge"
+          "item": "xl"
         },
         "path": [
           "shape",
           "corner",
-          "xlarge"
+          "xl"
+        ]
+      },
+      "full": {
+        "value": "9999rem",
+        "filePath": "tokens/shape/corner.json",
+        "isSource": true,
+        "original": {
+          "value": "9999"
+        },
+        "name": "shape-corner-full",
+        "attributes": {
+          "category": "shape",
+          "type": "corner",
+          "item": "full"
+        },
+        "path": [
+          "shape",
+          "corner",
+          "full"
         ]
       },
       "button": {
@@ -27345,6 +27383,44 @@
           "size",
           "border",
           "divide"
+        ]
+      },
+      "node": {
+        "value": "0.2rem",
+        "filePath": "tokens/size/border.json",
+        "isSource": true,
+        "original": {
+          "value": "{theme.size.border.node.value}"
+        },
+        "name": "size-border-node",
+        "attributes": {
+          "category": "size",
+          "type": "border",
+          "item": "node"
+        },
+        "path": [
+          "size",
+          "border",
+          "node"
+        ]
+      },
+      "edge": {
+        "value": "0.2rem",
+        "filePath": "tokens/size/border.json",
+        "isSource": true,
+        "original": {
+          "value": "{theme.size.border.edge.value}"
+        },
+        "name": "size-border-edge",
+        "attributes": {
+          "category": "size",
+          "type": "border",
+          "item": "edge"
+        },
+        "path": [
+          "size",
+          "border",
+          "edge"
         ]
       }
     },
@@ -28536,6 +28612,48 @@
             "size",
             "border",
             "divide"
+          ]
+        },
+        "node": {
+          "value": "0.2rem",
+          "filePath": "tokens-theme/mundorum/size.json",
+          "isSource": true,
+          "original": {
+            "value": "{size.border.large.value}"
+          },
+          "name": "theme-size-border-node",
+          "attributes": {
+            "category": "theme",
+            "type": "size",
+            "item": "border",
+            "subitem": "node"
+          },
+          "path": [
+            "theme",
+            "size",
+            "border",
+            "node"
+          ]
+        },
+        "edge": {
+          "value": "0.2rem",
+          "filePath": "tokens-theme/mundorum/size.json",
+          "isSource": true,
+          "original": {
+            "value": "{size.border.large.value}"
+          },
+          "name": "theme-size-border-edge",
+          "attributes": {
+            "category": "theme",
+            "type": "size",
+            "item": "border",
+            "subitem": "edge"
+          },
+          "path": [
+            "theme",
+            "size",
+            "border",
+            "edge"
           ]
         }
       }

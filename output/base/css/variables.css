@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 07 Jan 2024 17:38:42 GMT
+ * Generated on Sun, 19 May 2024 16:45:37 GMT
  */
 
 :root {
@@ -1330,11 +1330,13 @@
   --font-family-title: Roboto;
   --font-family-code: 'Courier New', monospace;
   --font-family-button: Roboto;
-  --shape-corner-small: .125rem;
-  --shape-corner-base: .25rem;
+  --shape-corner-none: 0rem;
+  --shape-corner-tiny: .125rem;
+  --shape-corner-small: .25rem;
   --shape-corner-medium: .375rem;
   --shape-corner-large: .5rem;
-  --shape-corner-xlarge: .75rem;
+  --shape-corner-xl: .75rem;
+  --shape-corner-full: 9999rem;
   --shape-corner-button: .375rem;
   --size-border-small: 0.05rem;
   --size-border-medium: 0.1rem;
@@ -1342,6 +1344,8 @@
   --size-border-xl: 0.3rem;
   --size-border-xxl: 0.4rem;
   --size-border-divide: 0.2rem;
+  --size-border-node: 0.2rem;
+  --size-border-edge: 0.2rem;
   --size-font-tiny: 0.75rem;
   --size-font-small: 0.875rem;
   --size-font-medium: 1rem;
@@ -1400,4 +1404,6 @@
   --theme-font-family-title: Roboto;
   --theme-font-family-code: 'Courier New', monospace;
   --theme-size-border-divide: 0.2rem;
+  --theme-size-border-node: 0.2rem;
+  --theme-size-border-edge: 0.2rem;
 }
