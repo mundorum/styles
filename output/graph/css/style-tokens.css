@@ -12,9 +12,27 @@
 }
 
 .node {
-  fill: var(--color-background-button-primary-base);
   stroke: var(--color-border-button-primary-base);
+  stroke-width: var(--size-border-node);
+  fill: var(--color-background-button-primary-base);
+}
+.edge {
+  stroke: var(--color-border-button-primary-base);
+  stroke-width: var(--size-border-edge);
 }
 .node:hover {
   fill: var(--color-background-button-primary-active);
+}
+.node-title {
+  font-family: var(--font-family-button);
+  font-size: var(--size-font-button);
+  padding: var(--size-padding-button-vertical) var(--size-padding-button-horizontal);
+}
+.node-primary {
+  color: var(--color-font-button-primary);
+  fill: var(--color-background-button-primary-base);
+  stroke: var(--color-border-button-primary-base);
+}
+.node-cover {
+  opacity: 0;
 }

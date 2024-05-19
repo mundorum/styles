@@ -1,9 +1,35 @@
 {
   ".node": {
+    "stroke": "{color.border.button.primary.base.value}",
+    "stroke-width": "{size.border.node.value}",
+    "fill": "{color.background.button.primary.base.value}"
+  },
+
+  ".edge": {
+    "stroke": "{color.border.button.primary.base.value}",
+    "stroke-width": "{size.border.edge.value}"
+  },
+
+  ".node:hover": {
+    "fill": "{color.background.button.primary.active.value}"
+  },
+
+  ".node-title": {
+    "font-family": "{font.family.button.value}",
+    "font-size": "{size.font.button.value}",
+    "padding": [
+      "{size.padding.button.vertical.value}",
+      "{size.padding.button.horizontal.value}"
+    ]    
+  },
+
+  ".node-primary": {
+    "color": "{color.font.button.primary.value}",
     "fill": "{color.background.button.primary.base.value}",
     "stroke": "{color.border.button.primary.base.value}"
   },
-  ".node:hover": {
-    "fill": "{color.background.button.primary.active.value}"
+
+  ".node-cover": {
+    "opacity": "0"
   }
 }

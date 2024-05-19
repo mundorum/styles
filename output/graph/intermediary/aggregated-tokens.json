@@ -27346,6 +27346,44 @@
           "border",
           "divide"
         ]
+      },
+      "node": {
+        "value": "0.2rem",
+        "filePath": "tokens/size/border.json",
+        "isSource": true,
+        "original": {
+          "value": "{theme.size.border.node.value}"
+        },
+        "name": "size-border-node",
+        "attributes": {
+          "category": "size",
+          "type": "border",
+          "item": "node"
+        },
+        "path": [
+          "size",
+          "border",
+          "node"
+        ]
+      },
+      "edge": {
+        "value": "0.2rem",
+        "filePath": "tokens/size/border.json",
+        "isSource": true,
+        "original": {
+          "value": "{theme.size.border.edge.value}"
+        },
+        "name": "size-border-edge",
+        "attributes": {
+          "category": "size",
+          "type": "border",
+          "item": "edge"
+        },
+        "path": [
+          "size",
+          "border",
+          "edge"
+        ]
       }
     },
     "font": {
@@ -28536,6 +28574,48 @@
             "size",
             "border",
             "divide"
+          ]
+        },
+        "node": {
+          "value": "0.2rem",
+          "filePath": "tokens-theme/mundorum/size.json",
+          "isSource": true,
+          "original": {
+            "value": "{size.border.large.value}"
+          },
+          "name": "theme-size-border-node",
+          "attributes": {
+            "category": "theme",
+            "type": "size",
+            "item": "border",
+            "subitem": "node"
+          },
+          "path": [
+            "theme",
+            "size",
+            "border",
+            "node"
+          ]
+        },
+        "edge": {
+          "value": "0.2rem",
+          "filePath": "tokens-theme/mundorum/size.json",
+          "isSource": true,
+          "original": {
+            "value": "{size.border.large.value}"
+          },
+          "name": "theme-size-border-edge",
+          "attributes": {
+            "category": "theme",
+            "type": "size",
+            "item": "border",
+            "subitem": "edge"
+          },
+          "path": [
+            "theme",
+            "size",
+            "border",
+            "edge"
           ]
         }
       }

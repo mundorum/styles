@@ -1,14 +1,25 @@
 .node {
-  fill: #4e4b4a;
   stroke: #7a7675;
+  stroke-width: 0.2rem;
+  fill: #4e4b4a;
+}
+.edge {
+  stroke: #7a7675;
+  stroke-width: 0.2rem;
 }
 .node:hover {
   fill: #252323;
 }
-.node-cover {
-  fill-opacity: 0;
+.node-title {
+  font-family: Roboto;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
-.node-cover:hover {
-  fill: black;
-  fill-opacity: 0.2;
+.node-primary {
+  color: #f5f1ed;
+  fill: #4e4b4a;
+  stroke: #7a7675;
+}
+.node-cover {
+  opacity: 0;
 }

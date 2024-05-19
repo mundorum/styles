@@ -7,7 +7,9 @@
       "xl"     : { "value": "0.3" },
       "xxl"    : { "value": "0.4" },
 
-      "divide" : { "value": "{theme.size.border.divide.value}" }
+      "divide" : { "value": "{theme.size.border.divide.value}" },
+      "node"   : { "value": "{theme.size.border.node.value}" },
+      "edge"   : { "value": "{theme.size.border.edge.value}" }
     }
   }
 }

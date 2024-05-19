@@ -2,7 +2,9 @@
   "theme": {
     "size": {
       "border": {
-        "divide" : { "value": "{size.border.large.value}" }
+        "divide" : { "value": "{size.border.large.value}" },
+        "node"   : { "value": "{size.border.large.value}" },
+        "edge"   : { "value": "{size.border.large.value}" }
       }
     }
   }
