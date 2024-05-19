@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Styles Preview</title>
+  <link rel="stylesheet" href="../output/base/css/variables.css">
+
+  <style>
+    .block {
+      width: 100px;
+      height: 50px;
+      background-color: #f0f0f0;
+      border: 2px solid #363333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Styles Preview</h1>
+  <p>This is a preview of the basic styles.</p>
+
+  <table>
+    <tr>
+      <td><div class="block" style="border-radius: var(--shape-corner-small)"></div></td>
+      <td>small</td>
+    </tr>
+    <tr>
+      <td><div class="block" style="border-radius: var(--shape-corner-base)"></div></td>
+      <td>base</td>
+    </tr>
+    <tr>
+      <td><div class="block" style="border-radius: var(--shape-corner-medium)"></div></td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <td><div class="block" style="border-radius: var(--shape-corner-large)"></div></td>
+      <td>large</td>
+    </tr>
+    <tr>
+      <td><div class="block" style="border-radius: var(--shape-corner-xlarge)"></div></td>
+      <td>xlarge</td>
+    </tr>
+  </table>
+</body>
